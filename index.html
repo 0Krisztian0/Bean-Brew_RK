@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean & Brew Café</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Felső sáv: Kapcsolati infók + Módváltó gomb -->
+    <div class="top-bar">
+        <span>📍 4025 Debrecen, Kávéházi utca 12. | 📞 +36 52 987 654</span>
+        <button id="theme-toggle" onclick="toggleTheme()">🌙 Sötét mód</button>
+    </div>
+
+    <header>
+        <div class="logo">Bean & Brew ☕</div>
+        <nav>
+            <ul>
+                <li><a href="#kezdolap">Kezdőlap</a></li>
+                <li><a href="#rolunk">Rólunk</a></li>
+                <li><a href="#itallap">Itallap</a></li>
+                <li><a href="#arak">Kávébab Árak</a></li>
+                <li><a href="#nyitvatartas">Nyitvatartás</a></li>
+                <li><a href="#kapcsolat">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="kezdolap" class="hero-banner">
+    <!-- Háttérvideó -->
+    <video autoplay muted loop playsinline class="hatter-video">
+        <source src="KEPEK_VIDEOK/Kavezo_hatter_video.mp4" type="video/mp4">
+        A böngésződ nem támogatja a videó lejátszását.
+    </video>
+
+    <!-- Sötétítő réteg + Szöveges tartalom -->
+    <div class="hero-overlay">
+        <div class="hero-tartalom">
+            <h2>Kézműves Kávé & Békés Pillanatok</h2>
+            <p>Frissen pörkölt kávék, házi sütemények és hangulatos környezet Debrecen szívében.</p>
+            <div class="gomb-csoport">
+                <a class="gomb" href="#itallap">Itallap megtekintése</a>
+                <a class="gomb gomb-korvonal" href="#nyitvatartas">Nyitvatartás</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Számlálók / Statisztika szekció -->
+        <section class="statok">
+            <div class="stat-elem">
+                <h3>100%</h3>
+                <p>Arabica kávé</p>
+            </div>
+            <div class="stat-elem">
+                <h3>15+</h3>
+                <p>Kávé különlegesség</p>
+            </div>
+            <div class="stat-elem">
+                <h3>0-24h</h3>
+                <p>Friss pörkölés</p>
+            </div>
+        </section>
+
+        <!-- Rólunk szekció -->
+        <section id="rolunk" class="szekcio">
+            <div class="szekcio-fejlec">
+                <h2>Rólunk</h2>
+                <p class="alcim">Ahol a kávé iránti szenvedély találkozik a minőséggel</p>
+            </div>
+
+            <div class="bemutatkozas-grid">
+                <div class="bemutatkozas-kartya">
+                    <h3>Minőségi Alapanyagok</h3>
+                    <p>Kizárólag fenntartható forrásból származó, kézzel válogatott kávébabokat használunk, amelyeket helyben pörkölünk.</p>
+                </div>
+
+                <div class="bemutatkozas-kartya">
+                    <h3>Otthonos Hangulat</h3>
+                    <p>Célunk egy olyan közösségi tér megteremtése volt, ahol a rohanó hétköznapokban is megállhatsz egy pillanatra feltöltődni.</p>
+                </div>
+            </div>
+
+            <blockquote class="idezet">
+                „A jó nap egy jól elkészített kávéval és egy mosollyal kezdődik.”
+            </blockquote>
+        </section>
+
+        <!-- Itallap szekció kategória kártyákkal -->
+        <section id="itallap" class="szekcio kiemelt-hatter">
+            <div class="szekcio-fejlec">
+                <h2>Kínálatunkból</h2>
+                <p class="alcim">Klasszikus és újhullámos kedvencek</p>
+            </div>
+
+            <div class="kinalat-grid">
+                <div class="menupont-kartya">
+                    <div class="kartya-fejlec">
+                        <h3>Espresso</h3>
+                        <span class="ar">650 Ft</span>
+                    </div>
+                    <p>Intenzív, testes és gazdag ízvilágú klasszikus feketekávé.</p>
+                </div>
+
+                <div class="menupont-kartya">
+                    <div class="kartya-fejlec">
+                        <h3>Cappuccino</h3>
+                        <span class="ar">950 Ft</span>
+                    </div>
+                    <p>Espresso gőzölt tejjel és selymes tejhabbal a tetején.</p>
+                </div>
+
+                <div class="menupont-kartya">
+                    <div class="kartya-fejlec">
+                        <h3>Latte Macchiato</h3>
+                        <span class="ar">1 100 Ft</span>
+                    </div>
+                    <p>Krémes tej, lágy tejhab és egy adag espresso rétegezve.</p>
+                </div>
+
+                <div class="menupont-kartya">
+                    <div class="kartya-fejlec">
+                        <h3>Jegeskávé</h3>
+                        <span class="ar">1 350 Ft</span>
+                    </div>
+                    <p>Hideg espresso vaníliafagylalttal és tejszínhabbal megbolondítva.</p>
+                </div>
+
+                <div class="menupont-kartya">
+                    <div class="kartya-fejlec">
+                        <h3>Forró Csokoládé</h3>
+                        <span class="ar">1 200 Ft</span>
+                    </div>
+                    <p>Sűrű, belgacsokoládés frissítő tej- vagy étcsoki opcióval.</p>
+                </div>
+
+                <div class="menupont-kartya">
+                    <div class="kartya-fejlec">
+                        <h3>Kézműves Teák</h3>
+                        <span class="ar">800 Ft</span>
+                    </div>
+                    <p>Zöld, fekete és gyümölcstea válogatás szálas teafüvekből.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Árak táblázat szekció (Elvihető szemes kávék) -->
+        <section id="arak" class="szekcio">
+            <div class="szekcio-fejlec">
+                <h2>Elvihető Szemes Kávéink</h2>
+                <p class="alcim">Vidd haza a Bean & Brew élményt (250g-os kiszerelés)</p>
+            </div>
+
+            <div class="tabla-doboz">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Kávé Fajtája</th>
+                            <th>Pörkölési Szint</th>
+                            <th>Ízjegyek</th>
+                            <th>Ár (250g)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ethiopia Yirgacheffe</td>
+                            <td>Világos</td>
+                            <td>Jázmin, citrusok, bergamott</td>
+                            <td>3 400 Ft</td>
+                        </tr>
+                        <tr>
+                            <td>Brazil Santos</td>
+                            <td>Közepes</td>
+                            <td>Csokoládé, mogyoró, karamell</td>
+                            <td>2 900 Ft</td>
+                        </tr>
+                        <tr>
+                            <td>Colombia Supremo</td>
+                            <td>Közepes / Sötét</td>
+                            <td>Piros bogyós gyümölcsök, kakó</td>
+                            <td>3 100 Ft</td>
+                        </tr>
+                        <tr>
+                            <td>House Blend (Ház Keveréke)</td>
+                            <td>Közepes</td>
+                            <td>Mogyoró, étcsoki, kiegyensúlyozott</td>
+                            <td>2 700 Ft</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Képgaléria / Helyőrző képek -->
+        <section class="szekcio kiemelt-hatter">
+            <div class="szekcio-fejlec">
+                <h2>Hangulatképek</h2>
+            </div>
+            <div class="galeria-grid">
+                <div class="kep-helye">
+                    <img src="KEPEK_VIDEOK/kavezo_belso.jpg" alt="Kávézó belső">
+                </div>
+                <div class="kep-helye">
+                    <img src="KEPEK_VIDEOK/kavezo_barista.jpg" alt="Barista munka közben">
+                </div>
+                <div class="kep-helye">
+                    <img src="KEPEK_VIDEOK/" alt="Sütemények">
+                </div>
+            </div>
+        </section>
+
+        <!-- Nyitvatartás elrendezés (Kétoszlopos megoldás) -->
+        <section id="nyitvatartas" class="szekcio">
+            <div class="szekcio-fejlec">
+                <h2>Nyitvatartás</h2>
+            </div>
+
+            <div class="nyitvatartas-doboz">
+                <div class="idopont-sor">
+                    <span>Hétfő – Csütörtök</span>
+                    <strong>07:30 – 19:00</strong>
+                </div>
+                <div class="idopont-sor">
+                    <span>Péntek – Szombat</span>
+                    <strong>08:00 – 21:00</strong>
+                </div>
+                <div class="idopont-sor">
+                    <span>Vasárnap</span>
+                    <strong>09:00 – 18:00</strong>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="kapcsolat" class="szekcio kiemelt-hatter kapcsolat-szekcio">
+            <div class="szekcio-fejlec">
+                <h2>Kapcsolat & Helyszín</h2>
+            </div>
+
+            <div class="kapcsolat-grid">
+                <div class="kapcsolat-info">
+                    <p><strong>Cím:</strong> 4025 Debrecen, Kávéházi utca 12.</p>
+                    <p><strong>Telefon:</strong> +36 52 987 654</p>
+                    <p><strong>E-mail:</strong> info@beanandbrew.hu</p>
+                </div>
+                <div class="kapcsolat-info">
+                    <p>Várunk szeretettel! Asztalfoglalás telefonon vagy e-mailben lehetséges.</p>
+                    <a href="mailto:info@beanandbrew.hu" class="gomb">Üzenet küldése</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Bean & Brew Café | Iskolai webfejlesztés projekt</p>
+    </footer>
+
+    <!-- Beépített JavaScript a sötét/világos mód váltásához -->
+    <script>
+        function toggleTheme() {
+            let body = document.body;
+            let button = document.getElementById("theme-toggle");
+
+            body.classList.toggle("dark-mode");
+
+            if (body.classList.contains("dark-mode")) {
+                button.textContent = "☀️ Világos mód";
+            } else {
+                button.textContent = "🌙 Sötét mód";
+            }
+        }
+    </script>
+
+</body>
+</html>
